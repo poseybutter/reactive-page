@@ -510,6 +510,28 @@ body {
   font-size: 10px;
 }
 
+/* 블로그1 */
+.blog1 img {
+  width: 100%;
+}
+
+.blog1 .img-retina {
+  display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx) {
+  /* 화면 비율이 해상도가 2인데, 1.5가 되면 .img-retina의 비는 활성화 시켜주고,
+   .img-normal의 img는 없앤다는 뜻 */
+  .blog1 .img-retina {
+    display: initial;
+  }
+  .blog1 .img-normal {
+    display: none;
+  }
+}
+
 /* mediaquery */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
