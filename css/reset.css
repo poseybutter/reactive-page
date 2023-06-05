@@ -83,6 +83,33 @@ h6 {
   font-weight: normal;
 }
 
+/* 버튼 초기화 */
+button {
+  border: none;
+}
+
+/* 반응형 이미지 */
+img,
+video {
+  width: 100%;
+}
+
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
 /* IR 효과 */
 .ir_pm {
   /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
